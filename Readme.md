@@ -89,4 +89,14 @@ spec:
       middlewares:
         - name: traefik-oidc-auth
 ```
+### Roadmap
 
+- [ ] Add option to specify id_token passthrough header name (to not default to Authorization)
+- [ ] Add option to only pass on specified claims as headers instead of the full id_token
+- [ ] Add option to check claims exist before accepting auth
+- [ ] Add option to compare value of claim against whitelist
+- [ ] Add option to compare value of claim, with regex
+- [ ] Add option to request other scopes (and stop hardcoding the profile scope)
+- [ ] Add option to make secure cookie required/disallow http
+- [ ] Add tests
+- [ ] Add better docs + example usage with docker compose
